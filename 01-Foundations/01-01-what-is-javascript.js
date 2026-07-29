@@ -1,0 +1,7 @@
+console.log("Welcome To Javascript")
+console.log(" ")
+console.log("My name is Dodzi")
+console.log(" ")
+console.log("I am learning Javascript from the ground up")
+console.log(" ")
+console.log("Goal: Build professional web applications.")
