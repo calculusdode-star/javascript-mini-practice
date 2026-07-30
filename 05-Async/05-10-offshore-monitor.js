@@ -101,7 +101,6 @@ async function monitorVessel() {
 
 }
 
-
 monitorVessel().catch(error => {
 
     console.log(error.message);
