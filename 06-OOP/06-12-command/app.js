@@ -6,6 +6,9 @@ import StartVesselCommand
 import StopVesselCommand
     from "./stopVesselCommand.js";
 
+import CommandInvoker
+    from "./commandInvoker.js";
+
 
 const vessel = new Vessel();
 
@@ -16,13 +19,13 @@ const stopCommand =
     new StopVesselCommand(vessel);
 
 
-const commands = [
-    startCommand,
-    stopCommand
-];
+const invoker =
+    new CommandInvoker();
 
-for (const command of commands) {
 
-    command.execute();
+invoker.add(startCommand);
 
-}
+invoker.add(stopCommand);
+
+
+invoker.executeAll();
